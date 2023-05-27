@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory Game</title>
+    <link rel="icon" type="image/x-icon" href="./consola.jpg" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Incluir archivo JavaScript de SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </head>
+  <body>
+    <main>
+      <section class="section1">
+        <h1>Game of Memory</h1>
+        <table>
+          <tr>
+            <td><button class="card" id="0" onclick="comenzar(0)"></button></td>
+            <td><button class="card" id="1" onclick="comenzar(1)"></button></td>
+            <td><button class="card" id="2" onclick="comenzar(2)"></button></td>
+            <td><button class="card" id="3" onclick="comenzar(3)"></button></td>
+          </tr>
+          <tr>
+            <td><button class="card" id="4" onclick="comenzar(4)"></button></td>
+            <td><button class="card" id="5" onclick="comenzar(5)"></button></td>
+            <td><button class="card" id="6" onclick="comenzar(6)"></button></td>
+            <td><button class="card" id="7" onclick="comenzar(7)"></button></td>
+          </tr>
+          <tr>
+            <td><button class="card" id="8" onclick="comenzar(8)"></button></td>
+            <td><button class="card" id="9" onclick="comenzar(9)"></button></td>
+            <td>
+              <button class="card" id="10" onclick="comenzar(10)"></button>
+            </td>
+            <td>
+              <button class="card" id="11" onclick="comenzar(11)"></button>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <button class="card" id="12" onclick="comenzar(12)"></button>
+            </td>
+            <td>
+              <button class="card" id="13" onclick="comenzar(13)"></button>
+            </td>
+            <td>
+              <button class="card" id="14" onclick="comenzar(14)"></button>
+            </td>
+            <td>
+              <button class="card" id="15" onclick="comenzar(15)"></button>
+            </td>
+          </tr>
+        </table>
+      </section>
+      <section class="section2">
+        <h2 class="aciertos estadisticas">
+          Aciertos <span id="contador_aciertos">0</span>
+        </h2>
+        <h2 class="t-restante estadisticas">
+          Tiempo <span id="contador_tiempo">60</span> segundos
+        </h2>
+        <h2 class="movimientos estadisticas">
+          Movimientos: <span id="contador_movimiento">0</span>
+        </h2>
+        <button class="estadisticas start">
+          <img class="play" src="brand-apple-arcade.svg" alt="play" /> Play Game
+        </button>
+      </section>
+    </main>
+    <footer>
+      <img src="device-gamepad-2.svg" alt="foot" />
+      <p>Game programmed by Cristopher</p>
+    </footer>
+    <script src="App.js"></script>
+  </body>
+</html>
